@@ -13,12 +13,12 @@ provider "aws" {
   region  = "us-west-2"
 }
 
-resource "aws_s3_bucket" "bucky" {
-  bucket = "my-bucky"
+resource "aws_s3_bucket" "bucky_ravi" {
+  bucket = "mybuckyyy"
   acl    = "private"
 
   tags = {
-    Name        = "ravi"
+    Name        = "ravi_s3"
     Environment = "Dev"
   }
 }

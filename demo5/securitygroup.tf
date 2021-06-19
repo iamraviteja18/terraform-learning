@@ -1,5 +1,5 @@
 
-resource "aws_security_group" "allow_ssh" {
+resource "aws_security_group" "allow-ssh" {
   vcp_id = aws_vcp.main.id
   name = "allow_ssh"
   description = "this is a security group that allows ssh and all egress traffic"
@@ -17,6 +17,6 @@ resource "aws_security_group" "allow_ssh" {
     cidr_blocks = ["0.0.0.0/0"]    
   }
   tags {
-    Name = "allow_ssh"
+    Name = "allow-ssh"
   }
 }
